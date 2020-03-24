@@ -1,7 +1,7 @@
 public class DatabaseLoginData {
-    public static String user = "bupp";
-    public static String password = "ooga123";
+    public static String user = "lukas";
+    public static String password = "Basseit1";
     static String DBURL = "localhost";
     static int port = 3306;
-    static String DBname = "greta";
+    static String DBname = "soloaventyr";
 }
