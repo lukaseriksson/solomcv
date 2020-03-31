@@ -4,7 +4,11 @@ public class SoloView extends JFrame {
     private JTextField firstNumber = new JTextField(10);
     private JLabel additionLabel = new JLabel("+");
     private JTextField secondNumber = new JTextField(10);
-    private JButton calculateButton = new JButton("Calculate");
+    private JButton calculateButton = new JButton("alternativ 1");
+    private JButton storyButton = new JButton("alternativ 2");
+    private JLabel label1 = new JLabel("info1afshbajbhafsghjfgsahjghjasfghfsa adsiuhfiuahfi aufhaiushfioahufsais fh aiusfh aius fhaisu hfiaushfioaugfisbgaio gf siadoufisagf iysdfiygasfi isad gfisafgoi");
+
+
     private JTextField calcSolution = new JTextField(10);
 
     SoloView() {
@@ -12,11 +16,11 @@ public class SoloView extends JFrame {
         JPanel calcPanel = new JPanel();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 200);
-        calcPanel.add(firstNumber);
-        calcPanel.add(additionLabel);
-        calcPanel.add(secondNumber);
+        calcPanel.add(label1);
         calcPanel.add(calculateButton);
-        calcPanel.add(calcSolution);
+        calcPanel.add(storyButton);
+
+
         this.add(calcPanel);
         // End of setting up the components --------
     }
@@ -41,6 +45,7 @@ public class SoloView extends JFrame {
     // in the Controller named actionPerformed
     void addCalculateListener(ActionListener listenForCalcButton) {
         calculateButton.addActionListener(listenForCalcButton);
+        storyButton.addActionListener(listenForCalcButton);
     }
 
     // Open a popup that contains the error message passed
